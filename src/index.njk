@@ -1,11 +1,30 @@
 ---
 title: Brother Toad
 layout: body.njk
+data: index.yaml
 ---
+{% import "layouts/macros.njk" as mymacros %}
+
 <p>
-  This site is just a placeholder for the domain.  There is nothing
-  useful here.
+  This is a very simple site that contains some notes for myself.
+  It is unlikely the content here will be useful to anyone else.
+  It was created using {{'metalsmith'|linkTo('https://metalsmith.io')|safe}},
+  and the source code is on GitHub.
 </p>
+
+<div class="row-parent">
+  <div class="column">
+    <div class="mb-3">
+      {{ mymacros.linkblock(data.servers) }}
+    </div>
+  </div>
+  <div class="column">
+    <div class="mb-3">
+      {{ mymacros.linkblock(data.local) }}
+    </div>
+  </div>
+</div>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.24.0/firebase-app.js"></script>
 

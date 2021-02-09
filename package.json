@@ -11,6 +11,7 @@
   "author": "brothertoad",
   "license": "MIT",
   "dependencies": {
+    "jstransformer-markdown": "^1.2.1",
     "jstransformer-nunjucks": "^0.5.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets-improved": "1.0.1",
