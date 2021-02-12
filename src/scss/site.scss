@@ -21,6 +21,11 @@ body {
   @include link-color;
 }
 
+.preformatted {
+  font-family: $font-stack;
+  font-size: 1.2em;
+}
+
 @media print {
    .noprint {
       visibility: hidden;
