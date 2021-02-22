@@ -32,8 +32,8 @@ servers:
       label: 'HTML code table'
       url: 'https://unicode-table.com/en/'
     -
-      label: ''
-      url: ''
+      label: 'Better HTML symbols, entities, etc.'
+      url: 'https://www.toptal.com/designers/htmlarrows/'
     -
       label: ''
       url: ''
