@@ -34,6 +34,13 @@ data: index.yaml
       psql --user postgres -f &#x3c;dumpfile&#x3e; postgres
     </pre>
   </div>
+  <div>
+    Cron jobs for me and root:
+    <pre class="xpreformatted">
+      30 01 * * * /home/bxxxxx/bin/backup.sh (me)
+      00 01 * * * sh /home/bxxxxx/bin/sys-backup.sh (root - perhaps just run manually)
+    </pre>
+  </div>
 </div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
