@@ -5,5 +5,4 @@ data: tasks.yaml
 ---
 {% import "layouts/macros.njk" as m %}
 
-{{ m.h3("Tasks") }}
-{{ m.bulletstringblock(data.tasks) }}
+{{ m.leftstringblock(data.tasks) }}

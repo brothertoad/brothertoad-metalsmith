@@ -3,7 +3,7 @@ title: Brother Toad
 layout: body.njk
 data: index.yaml
 ---
-{% import "layouts/macros.njk" as mymacros %}
+{% import "layouts/macros.njk" as m %}
 
 <p>
   This is a very simple site that contains some notes for myself.
@@ -16,18 +16,32 @@ data: index.yaml
 <div class="row-parent">
   <div class="column">
     <div class="mb-3">
-      {{ mymacros.linkblock(data.servers) }}
+      {{ m.linkblock(data.servers) }}
     </div>
   </div>
   <div class="column">
     <div class="mb-3">
-      {{ mymacros.linkblock(data.local) }}
+      {{ m.linkblock(data.local) }}
     </div>
   </div>
 </div>
 
 <div>
-  Useful commands:
+  {{ m.h3('Useful commands:') }}
+  <div>
+    To convert avi files with vorbis video:
+    <pre class="xpreformatted">
+      ffmpeg -i file.avi -vcodec h264 -an file.h264
+      ffmpeg -i file.avi -acodec libfaac file.aac
+      mp4box -add file.h264 -add file.aac file.mp4
+    </pre>
+  </div>
+  <div>
+    To get a vob file from a DVD (dvd://1 means title 1):
+    <pre class="xpreformatted">
+      mplayer dvd://1 -dvd-device /path/to/dvd/folder -v -dumpstream -dumpfile movie.vob
+    </pre>
+  </div>
   <div>
     To restore a postgres cluster from a pg_dumpall --clean command:
     <pre class="xpreformatted">
@@ -37,8 +51,8 @@ data: index.yaml
   <div>
     Cron jobs for me and root:
     <pre class="xpreformatted">
-      30 01 * * * /home/bxxxxx/bin/backup.sh (me)
-      00 01 * * * sh /home/bxxxxx/bin/sys-backup.sh (root - perhaps just run manually)
+      30 01 * * * /home/username/bin/backup.sh (me)
+      00 01 * * * sh /home/username/bin/sys-backup.sh (root - perhaps just run manually)
     </pre>
   </div>
 </div>

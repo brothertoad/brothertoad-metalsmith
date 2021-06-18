@@ -43,8 +43,5 @@ data: notes.yaml
   {{ 'Page with fix for mouse lag' | linkTo('https://askubuntu.com/questions/763413/how-can-i-get-rid-of-mouse-lag-under-ubuntu') | safe }}
 </p>
 
-{{ m.h3("Movies and TV shows not available on Amazon or Netlfix") }}
-{{ m.bulletstringblock(data.unavailable) }}
-
-{{ m.h3("Movies and TV shows to rent from Amazon") }}
-{{ m.bulletstringblock(data.amazon) }}
+{{ m.leftstringblock(data.unavailable) }}
+{{ m.leftstringblock(data.amazon) }}
