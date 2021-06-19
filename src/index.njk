@@ -27,7 +27,7 @@ data: index.yaml
 </div>
 
 <div>
-  {{ m.h3('Useful commands:') }}
+  {{ m.h3('Useful Linux commands and tips:') }}
   <div>
     To convert avi files with vorbis video:
     <pre class="xpreformatted">
@@ -54,6 +54,26 @@ data: index.yaml
       30 01 * * * /home/username/bin/backup.sh (me)
       00 01 * * * sh /home/username/bin/sys-backup.sh (root - perhaps just run manually)
     </pre>
+  </div>
+  <div>
+    I found the following technique on
+    <a href="https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg">this page on stackoverflow.com</a>.
+    To concatenate two (or more) mp4 files that have the same encoding parameters, create
+    a text file that lists them, one per line, like so:
+    <pre class="xpreformatted">
+      file 'video1.mp4'
+      file 'video2.mp4'
+    </pre>
+    then issue the following command:
+    <pre class="xpreformatted">
+      ffmpeg -f concat -safe 0 -i listfile -c copy output.mp4
+    </pre>
+  </div>
+  <div>
+    <a href="https://unix.stackexchange.com/questions/258679/why-is-ls-suddenly-wrapping-items-with-spaces-in-single-quotes">This link</a>
+    tells how to make the <code>ls</code> command revert to traditional behavior, and
+    not put quotes around file names with spaces, namely by setting the following
+    environment variable: <code>QUOTING_STYLE=literal</code>
   </div>
 </div>
 
