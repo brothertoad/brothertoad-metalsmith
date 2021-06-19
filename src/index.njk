@@ -29,6 +29,22 @@ data: index.yaml
 <div>
   {{ m.h3('Useful Linux commands and tips:') }}
   <div>
+    To see what version of Linux Mint is installed:
+    <pre class="xpreformatted">
+      cat /etc/os-release
+    </pre>
+  </div>
+  <div>
+    To reload the /etc/exports file:
+    <pre class="xpreformatted">
+      sudo exportfs -ra
+    </pre>
+    To see what is currently being NFS exported:
+    <pre class="xpreformatted">
+      sudo exportfs -s
+    </pre>
+  </div>
+  <div>
     To convert avi files with vorbis video:
     <pre class="xpreformatted">
       ffmpeg -i file.avi -vcodec h264 -an file.h264
