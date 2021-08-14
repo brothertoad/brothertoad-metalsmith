@@ -6,7 +6,8 @@
   "main": "build.js",
   "scripts": {
     "start": "node ./build.js",
-    "debug": "DEBUG=metalsmith-in-place,metalsmith-layouts node ./build.js"
+    "debug": "DEBUG=metalsmith-in-place,metalsmith-layouts node ./build.js",
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "brothertoad",
   "license": "MIT",
@@ -16,7 +17,7 @@
     "metalsmith": "^2.3.0",
     "metalsmith-assets-improved": "1.0.1",
     "metalsmith-data-loader": "^1.1.2",
-    "metalsmith-in-place": "^4.1.1",
+    "metalsmith-in-place": "^4.4.2",
     "metalsmith-inject-metadata": "^1.0.5",
     "metalsmith-layouts": "^2.1.0",
     "metalsmith-permalinks": "^2.1.0",
@@ -24,5 +25,11 @@
   },
   "devDependencies": {
     "metalsmith-metadata-directory": "^1.2.2"
+  },
+  "resolutions": {
+    "tar": "^6.1.8",
+    "trim-newlines": "^4.0.2",
+    "kind-of": "^6.0.2",
+    "debug": "^4.3.2"
   }
 }
