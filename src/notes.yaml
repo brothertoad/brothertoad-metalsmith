@@ -2,7 +2,6 @@ unavailable:
   label: 'Movies and TV shows not available on Amazon or Netlfix'
   strings:
     - Case (Icelandic TV series, sequel to The Court)
-    - Muertres a... (French)
     - Deadwind (Finnish TV series)
     - The Chalet (French TV series)
     - The Break (Belgian TV series)
@@ -26,6 +25,7 @@ amazon:
     - Desperate Widows (2016 Swedish - prime)
     - Black Widows (2018 - prime)
     - Irene Huss (MHz)
+    - Murder In... (original title Muertres a...) (French TV series - MHz)
     - Antigone 34 (French TV series - MHz)
     - Spring Tide (Swedish TV series - MHz)
     - Murder By The Lake (German/Austrian TV series - MHz)
