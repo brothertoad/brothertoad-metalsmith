@@ -35,7 +35,16 @@ servers:
       label: 'Better HTML symbols, entities, etc.'
       url: 'https://www.toptal.com/designers/htmlarrows/'
     -
-      label: ''
+      label: "Rust home page"
+      url: 'https://www.rust-lang.org/'
+    -
+      label: ""
+      url: ''
+    -
+      label: ""
+      url: ''
+    -
+      label: ""
       url: ''
 
 local:
@@ -56,3 +65,9 @@ local:
     -
       label: 'Legacy tasks'
       url: '/legacy-tasks/'
+    -
+      label: ""
+      url: ''
+    -
+      label: ""
+      url: ''
