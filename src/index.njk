@@ -105,6 +105,17 @@ data: index.yaml
     environment variable: <code>QUOTING_STYLE=literal</code>
   </div>
   <div class="tip-div">
+    To make Linux Mint boot in non-graphical mode, do the following:
+    <pre>
+      sudo systemctl set-default multi-user.target
+    </pre>
+    To revert back, use <code>graphical.target</code> instead of <code>multi-user.target</code>.  To see
+    the current value, do:
+    <pre>
+      sudo systemctl get-default
+    </pre>
+  </div>
+  <div class="tip-div">
     To get individual tracks from a flac file that has an entire album (assuming there is
     a cue file), do
     <pre>
