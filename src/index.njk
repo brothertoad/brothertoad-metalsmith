@@ -99,6 +99,14 @@ data: index.yaml
     </pre>
   </div>
   <div class="tip-div">
+    On <a href="https://www.amazon.com">Amazon</a>,
+    Lewis Balentine wrote a review of the PNY Quadro P400 graphics card that includes the following
+    command for doing a hardware encoding of a ts video file ($f is the ts file):
+    <pre>
+      ffmpeg -hwaccel cuvid -i "$f" -vcodec h264_nvenc -profile:v 2 -g 30 -qp 26 -c:a ac3 "${f%.ts}.mp4"
+    </pre>
+  </div>
+  <div class="tip-div">
     <a href="https://unix.stackexchange.com/questions/258679/why-is-ls-suddenly-wrapping-items-with-spaces-in-single-quotes">This link</a>
     tells how to make the <code>ls</code> command revert to traditional behavior, and
     not put quotes around file names with spaces, namely by setting the following
