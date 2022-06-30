@@ -2,8 +2,6 @@ unavailable:
   label: 'Movies and TV shows not available on Amazon or Netlfix'
   strings:
     - Case (Icelandic TV series, sequel to The Court)
-    - Deadwind (Finnish TV series)
-    - The Chalet (French TV series)
     - The Break (Belgian TV series)
     - The Disappearance (Disparue - French mini-series)
     - The Lava Field (Hraunio - Icelandic mini-series)
@@ -19,7 +17,6 @@ unavailable:
 amazon:
   label: 'Movies and TV shows to rent from Amazon'
   strings:
-    - Waking The Dead seasons 2ff (Britbox)
     - Jar City
     - Scary Or Die (prime)
     - Desperate Widows (2016 Swedish - prime)
@@ -56,8 +53,6 @@ amazon:
     - Samui Song (prime)
     - Innocent Thing
     - Full Moon Of The Virgins
-    - Operation Eichmann
-    - Trenchcoat
     - Mrs. Bradley Mysteries
     - Edward Scissorhands
     - Blue Murder
@@ -71,4 +66,3 @@ amazon:
     - The Morning After
     - Gallery Of Horrors
     - Hot Millions
-    - Faster, Pussycat! Kill! Kill!
